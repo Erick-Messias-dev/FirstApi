@@ -6,7 +6,7 @@ using FilmApi.Domain.Models;
 
 namespace FilmApi.Profiles;
 
-public class FilmProfile : Profile 
+public class FilmProfile : AutoMapper.Profile
 {
     public FilmProfile()
     {

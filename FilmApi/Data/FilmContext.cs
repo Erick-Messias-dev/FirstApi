@@ -14,4 +14,6 @@ public class FilmContext : DbContext
         modelBuilder.Entity<Film>().ToTable("films", "public");
     }
     public DbSet<Film> Films { get; set; }
+    public DbSet<Cinema> Cinemas { get; set; }
+    public DbSet<Address> Addresses { get; set; }
 }
