@@ -1,6 +1,9 @@
-﻿namespace FilmApi.Data.Dto
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace FilmApi.Data.Dto;
+
+public class ReadAddressDto
 {
-    public class ReadAddressDto
-    {
-    }
+    public string Name { get; set; }
+    public int Number { get; set; }
 }

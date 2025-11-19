@@ -9,8 +9,10 @@ public class Address
     [Required]
     public int Id { get; set; }
     [Required] 
-    public string Street { get; set; }
+    public string Name { get; set; }
 
     [Required]
     public int Number { get; set; }
+    
+    public virtual Cinema cinema { get; set; }
 }
