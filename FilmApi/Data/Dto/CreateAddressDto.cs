@@ -2,7 +2,7 @@
 
 namespace FilmApi.Data.Dto;
 
-public class CreatAddressDto
+public class CreateAddressDto
 {
     public string Name { get; set; }
 
