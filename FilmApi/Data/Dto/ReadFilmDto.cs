@@ -11,5 +11,6 @@ namespace FilmApi.Data.Dto
        
         public int Grade { get; set; }
         public DateTime ApointmentTime { get; set; } = DateTime.Now;
+        public ICollection<ReadSessionDto> Sessions { get; set; }
     }
 }

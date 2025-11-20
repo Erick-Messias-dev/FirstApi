@@ -13,6 +13,6 @@ public class FilmProfile : AutoMapper.Profile
         CreateMap<CreateFilmDto, Film>();
         CreateMap<UpdateFilmDto, Film>();
         CreateMap<Film, UpdateFilmDto>();
-        CreateMap<Film, ReadFilmDto>();
+        CreateMap<Film, ReadFilmDto>().ForMember(filmDto => filmDto.Sessions, opt => opt.MapFrom(film => film.Sessions));
     }
 }

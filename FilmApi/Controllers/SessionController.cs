@@ -7,6 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FilmApi.Controllers;
 
+
+[ApiController]
+[Route("[Controller]")]
 public class SessionController : ControllerBase
 {
     private FilmContext _context;

@@ -33,7 +33,7 @@ namespace FilmApi.Controllers
         [HttpGet]
         public IEnumerable<ReadFilmDto> GetFilm([FromQuery] int skip = 0, [FromQuery] int take = 10)
         {
-            return _mapper.Map<List<ReadFilmDto>>(_context.Films.Skip(skip).Take(take));
+            return _mapper.Map<List<ReadFilmDto>>(_context.Films.Skip(skip).Take(take).ToList());
         }
 
         [HttpGet("{id}")]

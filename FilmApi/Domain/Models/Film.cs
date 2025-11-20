@@ -17,4 +17,5 @@ public class Film : IFilm
     [Required(ErrorMessage = "A nota deve er entre 1 a 5")]
     [Range(0, 5)]
     public int Grade { get; set; }
+    public virtual ICollection<Session> Sessions { get; set; }
 }
