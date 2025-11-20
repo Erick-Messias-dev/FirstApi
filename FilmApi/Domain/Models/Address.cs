@@ -14,5 +14,5 @@ public class Address
     [Required]
     public int Number { get; set; }
     
-    public virtual Cinema cinema { get; set; }
+    public virtual Cinema Cinema { get; set; }
 }

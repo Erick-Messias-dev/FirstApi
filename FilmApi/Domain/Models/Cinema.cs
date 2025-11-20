@@ -10,8 +10,7 @@ public class Cinema
     [Required]    
     public string Street { get; set; }
     [Required]
-    public string Number { get; set; }
     public int AddressId { get; set; }
-    public virtual Address address { get; set; }
+    public virtual Address Address { get; set; }
 
 }

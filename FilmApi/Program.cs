@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 //Add DataBase
-builder.Services.AddDbContext<FilmContext>(option => option.UseNpgsql(builder.Configuration.GetConnectionString("FilmConnection")));
+builder.Services.AddDbContext<FilmContext>(option => option.UseLazyLoadingProxies().UseNpgsql(builder.Configuration.GetConnectionString("FilmConnection")));
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
